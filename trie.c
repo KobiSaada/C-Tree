@@ -130,7 +130,7 @@ void print(TrieNode* head,char word[], int level){
     if(runner == NULL) return;
     if(runner->count > 0){
         word[level] = END;
-        printf("%s\t %ld \n",word,runner->count);
+        printf("%s %ld \n",word,runner->count);
     }
     
     for(int i = 0; i < ALPHABET_SIZE; i++){
@@ -146,7 +146,7 @@ void printReverse(TrieNode* root,char word[], int level){
     if(runner == NULL) return;
     if(runner->count > 0){
         word[level] = END;
-        printf("%s\t %ld \n",word,runner->count);
+        printf("%s %ld \n",word,runner->count);
     }
     
     for(int i = ALPHABET_SIZE - 1; i >= 0; i--){
